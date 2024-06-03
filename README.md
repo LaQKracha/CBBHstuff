@@ -11,5 +11,5 @@ Used to replace the `TARGET_IP` occurrences on the contents of this repo with yo
 Just clone the repository, and use it haha 💻🔥
 
 ```bash
-git clone https://github.com/laqkracha/UsefulStuff.git
+git clone https://github.com/sa1tty/UsefulStuff.git
 ```
