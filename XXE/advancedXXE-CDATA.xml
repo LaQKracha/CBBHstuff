@@ -9,4 +9,4 @@
   %xxe;
 ]>
 ...
-<email>&joined;</email>
+<email>&joined;</email> <!-- reference the &joined; entity to print the file content -->
